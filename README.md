@@ -6,8 +6,8 @@ Repositorio con código de ejemplo para entender el funcionamiento de CMSIS-RTOS
 
 La documentación de ayuda está disponible en:
 
-- Sphinx Doc: https://mruizglz.github.io/SBM-rtos
-- PDF: https://mruizglz.github.io/SBM-rtos/simplepdf/SBM-CMSIS-RTOS-V2.pdf
+- Sphinx Doc: https://mruizglz.github.io/SBM
+- PDF: https://mruizglz.github.io/SBM/simplepdf/SBM-CMSIS-RTOS-V2.pdf
 
 ## Ejemplos incluidos en el repositorio
 
