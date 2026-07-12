@@ -17,11 +17,11 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'CMSIS-RTOS V2 Ejemplos'
+project = 'Documentación y Ejemplos Sistemas Basados en Microprocesador'
 copyright = 'Universidad Politécnica de Madrid'
 author = 'Mariano Ruiz'
-release = '1.0'
-version = '1.0'
+release = '2.0'
+version = '2.0'
 
 
 # -- General configuration ---------------------------------------------------
