@@ -44,7 +44,7 @@ Listado de ejemplos incluidos
    * - Carpeta
      - Objetivos
    * - **ejemplothreads**
-     - Aprender el manejo básico de creación de threads. Uso de la misma función con parámetros parea crear multiples threads
+     - Aprender el manejo básico de la creación de threads. Uso de la misma función con parámetros para crear múltiples threads
    * - **ejemplothreads-flags**
      - Sincronización de threads usando flags
    * - **ejemplothreads-queues**
@@ -64,12 +64,12 @@ Uso del simulador
 ARM Keil Microvision dispone de opciones para configurar donde se ejecutará la aplicación (Icono *Options for Target*). Seleccione **Debug** y active el uso del simulador (**Use Simulator**). 
 Es necesario que configure el fichero de inicialización (**Initialization File**) para que cargue un script de configuración del microcontrolador. En este caso, seleccione el fichero ``simulator.ini`` que se encuentra en cada una de las carpetas de ejmplo. Por ejemplo en la carpeta ``.\ejemplothreads`` del repositorio encontrará el fichero **simulador.ini** con este contenido:
 
-.. literalinclude:: ../ejemplothreads/simulator.ini
+.. literalinclude:: ../B2/ejemplothreads/simulator.ini
   :language: ini
   :linenos:
   
 
-El significado de estas instrucciones es habilitar para el simulador las operaciones de lectura/escritura en las zonas de memoria donde se encuentran los periféricos.
+El significado de estas instrucciones es habilitar, para el simulador, las operaciones de lectura y escritura en las zonas de memoria donde se encuentran los periféricos.
 
 .. tip:: 
 
@@ -125,7 +125,7 @@ Logic Analyzer
 Permite visualizar la evolución temporal de variables que sean globales a la aplicación, el contenido de posiciones de memoria, etc. Se puede configurar el rango de valores y es muy apropiado para comparar visualmente la evolución de la aplicación software a través del seguimiento de variables.
 Para agregar señales al ``Logic Analyzer`` puede arrastrarlas de la ventana de símbolos o escribir el nombre de la misma.
 
-.. figure:: ../presentation/logicanalyzer.png
+.. figure:: ../B2/presentation/logicanalyzer.png
    :alt: Analizador Lógico
    :scale: 50 %
    :align: center
@@ -151,7 +151,7 @@ Para utilizarlo:
 3. Se muestra una lista de las diferentes secciones de código.
 
 
-.. figure:: ../presentation/performanceanalyzer.png
+.. figure:: ../B2/presentation/performanceanalyzer.png
    :alt: Performance Analyzer
    :scale: 50 %
    :align: center
