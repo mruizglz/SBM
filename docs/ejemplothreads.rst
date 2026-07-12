@@ -209,7 +209,7 @@ Significa que no se pudo crear el hilo. En ese caso, la función ``Init_Thread()
 
 El fichero de configuración del sistema operativo tal y como indica la figura tiene configurado un tick de 1ms. 
 
-.. figure:: ../presentation/RTXConfig.png
+.. figure:: ../B2/presentation/RTXConfig.png
    :scale: 50 %
    :align: center
    :figwidth: 400px
