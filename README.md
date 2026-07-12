@@ -4,8 +4,8 @@ Repositorio con información de la asignatura Sistemas Basados en Microprocesado
 
 ## Instalación de las herramientas para Visual Code
 
-La carpeta `vc-install` contiene los scripts para instalar en Windows y Linux Visual Code y el soporte para usasr CMSIS.
-La asignatura continua usando de manera oficial Keil Microvision pero debido a que ARM va a dejar de actualizar esa herramientas y migrar a VC se proporciona la opción de comenzar a utilizarlo.
+La carpeta `vc-install` contiene los scripts para instalar Visual Code en Windows y Linux y el soporte para usar CMSIS.
+La asignatura continúa usando de manera oficial Keil µVision, pero debido a que ARM va a dejar de actualizar esas herramientas y migrar a VC, se proporciona la opción de comenzar a utilizarlo.
 
 ## Documentación
 
@@ -23,14 +23,14 @@ La documentación de ayuda está disponible en:
 
 - `/SBM/B2/ejemplothreads-flags`
   - Comunicación/sincronización entre hilos mediante **thread flags**.
-  - Un hilo `Producer` señaliza flags y un hilo `Consumer` actúa sobre LEDs según `osThreadFlagsWait`.
+  - Un hilo `Producer` señaliza flags y un hilo `Consumer` actúa sobre los LEDs según `osThreadFlagsWait`.
 
 - `/SBM/B2/ejemplothreads-queues`
-  - Comunicación entre hilos con **colas de mensajes**.
+  - Comunicación entre hilos mediante **colas de mensajes**.
   - Un `Producer` inserta datos con `osMessageQueuePut` y un `Consumer` los procesa con `osMessageQueueGet` para controlar LEDs.
 
 - `/SBM/B2/ejemplothreads-timers`
   - Uso de **software timers** en CMSIS-RTOS v2.
   - Crea un timer one-shot y otro periódico (`osTimerNew`, `osTimerStart`) para secuenciar el comportamiento de los LEDs.
 
-Más detalle de cada ejemplo en la documentación Sphinx (`docs/*.rst`).
+Más detalles de cada ejemplo en la documentación de Sphinx (`docs/*.rst`).
