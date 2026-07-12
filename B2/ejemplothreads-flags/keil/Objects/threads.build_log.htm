@@ -1,0 +1,192 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.43.1.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Mariano Ruiz
+HP Inc.
+User-based license: Keil MDK Community (non-commercial free of charge)
+Valid until: Jun 1 2033. Cached until: Jun 10 2026
+ 
+Tool Versions:
+Toolchain:       Keil MDK Community (non-commercial free of charge  Version: 5.43.0.0
+Toolchain Path:  C:\Keil_v543\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.24
+Assembler:       Armasm.exe V6.24
+Linker/Locator:  ArmLink.exe V6.24
+Library Manager: ArmAr.exe V6.24
+Hex Converter:   FromElf.exe V6.24
+CPU DLL:         SARMCM3.DLL V5.43.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.1.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+E:\sbm\SBM-rtos\ejemplothreads-flags\keil\threads-flags.uvprojx
+Project File Date:  06/03/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.24', folder: 'C:\Keil_v543\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+compiling main.c...
+compiling Thread.c...
+compiling rtx_delay.c...
+compiling rtx_semaphore.c...
+compiling rtx_lib.c...
+compiling rtx_memory.c...
+compiling rtx_kernel.c...
+compiling rtx_mutex.c...
+compiling rtx_evr.c...
+assembling irq_armv7m.S...
+compiling rtx_evflags.c...
+compiling rtx_msgqueue.c...
+compiling rtx_mempool.c...
+compiling rtx_system.c...
+compiling RTX_Config.c...
+compiling os_systick.c...
+compiling rtx_timer.c...
+compiling rtx_thread.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_pwr.c...
+assembling startup_stm32f429xx.s...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling system_stm32f4xx.c...
+linking...
+Program Size: Code=18868 RO-data=816 RW-data=168 ZI-data=36304  
+".\Objects\threads.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.3.0.pack
+                ARM::CMSIS@6.3.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.2.0
+   * Component: SysTick Version: 1.0.5
+   * Component: OS Tick Version: 1.0.1
+   * Component: RTOS2 Version: 2.3.0
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-RTX.5.9.1.pack
+                ARM::CMSIS-RTX@5.9.1
+                Keil RTX5 RTOS implementation of CMSIS-RTOS2 API
+   * Component: Keil RTX5 Variant: Source Version: 5.9.1
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil::STM32F4xx_DFP@2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: Classic Version: 1.8.1
+   * Component: Common Version: 1.8.1
+   * Component: Cortex Version: 1.8.1
+   * Component: DMA Version: 1.8.1
+   * Component: GPIO Version: 1.8.1
+   * Component: PWR Version: 1.8.1
+   * Component: RCC Version: 1.8.1
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/CMSIS
+  ./RTE/Device/STM32F429ZITx
+  ./RTE/_Target_1
+  C:/Users/Usuario/AppData/Local/Arm/Packs543/ARM/CMSIS-RTX/5.9.1/Include
+  C:/Users/Usuario/AppData/Local/Arm/Packs543/ARM/CMSIS/6.3.0/CMSIS/Core/Include
+  C:/Users/Usuario/AppData/Local/Arm/Packs543/ARM/CMSIS/6.3.0/CMSIS/RTOS2/Include
+  C:/Users/Usuario/AppData/Local/Arm/Packs543/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+  C:/Users/Usuario/AppData/Local/Arm/Packs543/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.2.0
+
+   * Component: ARM::CMSIS:OS Tick:SysTick@1.0.5
+      Source file:   CMSIS/RTOS2/Source/os_systick.c
+
+   * Component: ARM::CMSIS:RTOS2:Keil RTX5&Source@5.9.1
+      Source file:   Template/Thread.c
+      Source file:   Template/Mutex.c
+      Source file:   Template/Events.c
+      Source file:   Template/svc_user.c
+      Include file:  Config/RTX_Config.h
+      Source file:   Template/MsgQueue.c
+      Source file:   Template/Semaphore.c
+      Source file:   Config/RTX_Config.c
+      Source file:   Source/rtx_thread.c
+      Source file:   Source/rtx_timer.c
+      Source file:   Template/MemPool.c
+      Include file:  Include/rtx_os.h
+      Source file:   Source/rtx_evflags.c
+      Source file:   Template/Timer.c
+      Source file:   Source/rtx_semaphore.c
+      Source file:   Source/rtx_memory.c
+      Source file:   Source/rtx_delay.c
+      Source file:   Source/rtx_kernel.c
+      Source file:   Source/rtx_mutex.c
+      Source file:   Template/main.c
+      Source file:   Source/rtx_mempool.c
+      Source file:   Source/rtx_msgqueue.c
+      Source file:   Source/rtx_system.c
+      Source file:   Source/GCC/irq_armv7m.S
+      Source file:   Source/rtx_evr.c
+      Source file:   Source/rtx_lib.c
+
+   * Component: CMSIS:OS Tick(API)@1.0.1
+      Include file:  CMSIS/RTOS2/Include/os_tick.h
+
+   * Component: CMSIS:RTOS2(API)@2.3.0
+      Include file:  CMSIS/RTOS2/Include/cmsis_os2.h
+
+   * Component: Device:STM32Cube Framework(API)@1.0.0
+
+   * Component: Keil::Device:STM32Cube Framework:Classic@1.8.1
+      Include file:  CMSIS/Driver/Config/RTE_Device.h
+      Include file:  MDK/Templates/Inc/stm32f4xx_it.h
+      Include file:  MDK/Templates/Inc/main.h
+      Source file:   MDK/Templates/Src/main.c
+      Source file:   MDK/Templates/Src/stm32f4xx_hal_msp.c
+      Include file:  MDK/Templates/Inc/stm32f4xx_hal_conf.h
+      Include file:  MDK/Templates_LL/Inc/main.h
+      Source file:   MDK/Templates/Src/stm32f4xx_it.c
+      Source file:   MDK/Templates_LL/Src/main.c
+
+   * Component: Keil::Device:STM32Cube HAL:Common@1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+      Include file:  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex@1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:DMA@1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO@1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR@1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC@1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:Startup@2.6.3
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Source file:   MDK/Device/Source/ARM/STM32F42xxx_43xxx_OPT.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f429xx.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
