@@ -1,12 +1,11 @@
 .. _vscode:
 
-=========================================
-Entorno Visual Studio Code para SBM-RTOS
-=========================================
+======================================
+Instalación de VC y la extensión CMSIS 
+======================================
 
 Esta guía documenta la instalación del entorno de trabajo a partir de los
-scripts incluidos en ``/tmp/workspace/mruizglz/SBM-rtos/vc-install``. El
-objetivo es dejar una máquina preparada para abrir, compilar y depurar los
+scripts incluidos en ``SBM/vc-install``. El objetivo es dejar una máquina lista para abrir, compilar y depurar los
 ejemplos del repositorio con Visual Studio Code y el ecosistema CMSIS.
 
 Los scripts disponibles son:
@@ -29,9 +28,7 @@ Los scripts disponibles son:
 Qué instala el entorno
 ======================
 
-Ambos instaladores persiguen la misma idea: centralizar las herramientas y los
-packs CMSIS en una ubicación compartida de sistema y dejar VS Code listo para
-trabajar con proyectos ARM/CMSIS.
+Ambos instaladores persiguen la misma idea: centralizar las herramientas y los packs de CMSIS en una ubicación compartida del sistema y dejar listo VS Code para trabajar con proyectos ARM/CMSIS.
 
 Componentes principales
 -----------------------
@@ -106,15 +103,10 @@ Packs CMSIS instalados
 Linux
 =====
 
-El instalador Linux está pensado para Ubuntu LTS de 64 bits y debe ejecutarse
-como ``root``.
+El instalador Linux está pensado para Ubuntu LTS de 64 bits y debe ejecutarse con permisos de ``sudo``.
 
-Sistema objetivo
-----------------
+El script ha sido probado en:
 
-Según el encabezado del script, el flujo ha sido probado en:
-
-* ``Ubuntu 22.04 LTS``
 * ``Ubuntu 24.04 LTS``
 * Arquitectura ``x86_64``
 
@@ -123,7 +115,7 @@ Requisitos previos
 
 Antes de lanzar el script, verifica:
 
-* Acceso a Internet para descargar herramientas, paquetes CMSIS y VS Code.
+* Acceso a Internet para descargar herramientas, paquetes de CMSIS y VS Code.
 * Usuario con privilegios ``sudo``.
 * Que el usuario final tenga una ``home`` válida, ya que el instalador modifica
   ``~/.bashrc`` y ``~/.config/Code/User/settings.json`` del usuario que invoca
@@ -133,18 +125,18 @@ Antes de lanzar el script, verifica:
 Archivos implicados
 -------------------
 
-* Instalador: ``/tmp/workspace/mruizglz/SBM-rtos/vc-install/linux/install.sh``
-* Desinstalador: ``/tmp/workspace/mruizglz/SBM-rtos/vc-install/linux/uninstall.sh``
+* Instalador: ``SBM/vc-install/linux/install.sh``
+* Desinstalador: ``SBM/vc-install/linux/uninstall.sh``
 
 Cómo ejecutar la instalación
 ----------------------------
 
-Desde la raíz del repositorio:
+Clonar el repositorio y desde la raíz ejecutar:
 
 .. code-block:: bash
 
-   cd /tmp/workspace/mruizglz/SBM-rtos
-   sudo bash /tmp/workspace/mruizglz/SBM-rtos/vc-install/linux/install.sh
+   cd SBM
+   sudo bash ./SBM/vc-install/linux/install.sh
 
 Qué hace el script paso a paso
 ------------------------------
@@ -215,9 +207,7 @@ Variables y rutas configuradas
    * - Descargas
      - ``/opt/ARM-Shared/downloads``
 
-Para evitar que el terminal integrado de VS Code ignore las variables cargadas
-en ``/etc/profile.d``, el instalador añade un bloque a ``~/.bashrc`` del
-usuario invocador y genera ``~/.config/Code/User/settings.json``.
+Para evitar que el terminal integrado de VS Code ignore las variables cargadas en ``/etc/profile.d``, el instalador añade un bloque a ``~/.bashrc`` del usuario invocador y genera ``~/.config/Code/User/settings.json``.
 
 Configuración global de VS Code que genera el script
 ----------------------------------------------------
@@ -301,8 +291,8 @@ Para revertir la instalación:
 
 .. code-block:: bash
 
-   cd /tmp/workspace/mruizglz/SBM-rtos
-   sudo bash /tmp/workspace/mruizglz/SBM-rtos/vc-install/linux/uninstall.sh
+   cd SBM
+   sudo bash ./SBM/vc-install/linux/uninstall.sh
 
 El desinstalador:
 
@@ -311,21 +301,19 @@ El desinstalador:
 * Elimina ``/etc/profile.d/sbm-rtos.sh``.
 * Desinstala ``cmake`` y ``ninja-build`` si fueron instalados por ``apt``.
 * Desinstala las extensiones de VS Code.
-* Ofrece opcionalmente desinstalar VS Code y su repositorio ``apt``.
+* Ofrece la opción de desinstalar VS Code y su repositorio ``apt``.
 * Intenta purgar el paquete ``stlink`` detectado en el sistema.
 
 
 Windows
 =======
 
-El instalador Windows está escrito en PowerShell y debe ejecutarse como
-Administrador.
+El instalador de Windows está escrito en PowerShell y debe ejecutarse como administrador.
 
 Sistema objetivo
 ----------------
 
-El script no fija una versión concreta de Windows, pero por las herramientas
-utilizadas requiere un entorno con:
+El script no fija una versión concreta de Windows, pero por las herramientas utilizadas requiere un entorno con:
 
 * PowerShell
 * ``winget``
@@ -343,8 +331,8 @@ Ese ejecutable se usa para descomprimir Arm Compiler 6.
 Archivos implicados
 -------------------
 
-* Instalador: ``/tmp/workspace/mruizglz/SBM-rtos/vc-install/windows/installer2.ps1``
-* Desinstalador: ``/tmp/workspace/mruizglz/SBM-rtos/vc-install/windows/uninstaller.ps1``
+* Instalador: ``-/SBM/vc-install/windows/installer2.ps1``
+* Desinstalador: ``./SBM/vc-install/windows/uninstaller.ps1``
 
 Cómo ejecutar la instalación
 ----------------------------
@@ -354,7 +342,7 @@ Abre **PowerShell como Administrador** y ejecuta:
 .. code-block:: powershell
 
    Set-ExecutionPolicy -Scope Process Bypass -Force
-   cd C:\ruta\al\repositorio\SBM-rtos
+   cd C:\ruta\al\repositorio\SBM
    .\vc-install\windows\installer2.ps1
 
 Si quieres ejecutarlo usando la ruta absoluta del clon de trabajo:
@@ -362,7 +350,7 @@ Si quieres ejecutarlo usando la ruta absoluta del clon de trabajo:
 .. code-block:: powershell
 
    Set-ExecutionPolicy -Scope Process Bypass -Force
-   & "C:\ruta\al\repositorio\SBM-rtos\vc-install\windows\installer2.ps1"
+   & "C:\ruta\al\repositorio\SBM\vc-install\windows\installer2.ps1"
 
 Qué hace el script paso a paso
 ------------------------------
@@ -447,7 +435,7 @@ El script también añade al ``PATH`` de máquina:
 Extensiones instaladas en VS Code
 ---------------------------------
 
-El instalador Windows ejecuta:
+El instalador de Windows ejecuta:
 
 .. code-block:: powershell
 
