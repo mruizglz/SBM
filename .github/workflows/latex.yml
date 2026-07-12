@@ -36,7 +36,7 @@ jobs:
         with:
           # The root LaTeX file to be compiled
           root_file: UPMSBM-CMSIS-RTOS.tex
-          working_directory: presentation
+          working_directory: B2/presentation
           args: -pdf -shell-escape -f
           
       - name: LaTeX compilation II
@@ -46,7 +46,7 @@ jobs:
         with:
           # The root LaTeX file to be compiled
           root_file: UPMSBM-CMSIS-RTOS_en.tex
-          working_directory: presentation
+          working_directory: B2/presentation
           args: -pdf -shell-escape -f
       
 
@@ -54,7 +54,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: UPMSBM-CMSIS-RTOS.pdf
-          path: presentation/UPMSBM-CMSIS-RTOS.pdf presentation/UPMSBM-CMSIS-RTOS_en.pdf
+          path: B2/presentation/UPMSBM-CMSIS-RTOS.pdf B2/presentation/UPMSBM-CMSIS-RTOS_en.pdf
           
           
       - name: Delete Release
@@ -68,8 +68,8 @@ jobs:
           gh release create 1.0 \
             --title "1.0" \
             --notes "Release notes for 1.0: This presentation always contains the last version of the slides" \
-            ./presentation/UPMSBM-CMSIS-RTOS.pdf \
-            ./presentation/UPMSBM-CMSIS-RTOS_en.pdf
+            ./B2/presentation/UPMSBM-CMSIS-RTOS.pdf \
+            ./B2/presentation/UPMSBM-CMSIS-RTOS_en.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
