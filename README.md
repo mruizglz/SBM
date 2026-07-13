@@ -1,4 +1,4 @@
-# Sistemas Basados en Microprocesador (ETSIS Telecomunicación-Campus Sur UPM)
+# Sistemas Basados en Microprocesador (ETSI Sistemas de Telecomunicación-Campus Sur UPM)
 
 Repositorio con información sobre la asignatura Sistemas Basados en Microprocesador de la ETSIS Telecomunicación de la UPM. 
 
