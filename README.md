@@ -22,6 +22,6 @@ La asignatura continúa usando de manera oficial Keil µVision, pero debido a qu
 
 La documentación de ayuda (generada a partir de las fuentes en `docs/`) está disponible en:
 
-- Sphinx Doc: https://mruizglz.github.io/SBM
-- PDF: https://mruizglz.github.io/SBM/simplepdf/SBM-CMSIS-RTOS-V2.pdf
+- Sphinx Doc: https://univ-politecnica-madrid.github.io/SBM/
+- PDF: https://univ-politecnica-madrid.github.io/SBM/simplepdf/SBM-CMSIS-RTOS-V2.pdf
 
