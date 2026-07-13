@@ -1,10 +1,10 @@
-# SBM
+# Sistemas Basados en Microprocesador (ETSIS Telecomunicación-Campus Sur UPM)
 
 Repositorio con información sobre la asignatura Sistemas Basados en Microprocesador de la ETSIS Telecomunicación de la UPM. 
 
 ## Estructura del repositorio
 
-- `B2/` - Ejemplos de uso de CMSIS-RTOS v2 (proyectos en Keil µVision y Visual Studio Code) y material de presentación de la asignatura.
+- `B2/` - Ejemplos de uso de CMSIS-RTOS v2 (proyectos en Keil µVision y Visual Studio Code) y material de la presentación de CMSIS-RTOS2.
   - `ejemplothreads/`, `ejemplothreads-flags/`, `ejemplothreads-queues/`, `ejemplothreads-timers/` - Código fuente (`src/`), proyecto Keil (`keil/`) y proyecto de Visual Code/CMSIS (`vc/`) de cada ejemplo.
   - `presentation/` - Diapositivas y material gráfico (en español e inglés) utilizados en las sesiones teóricas.
 - `docs/` - Fuentes en reStructuredText (Sphinx) de la documentación de ayuda publicada en GitHub Pages.
