@@ -10,9 +10,22 @@ Repositorio con información sobre la asignatura Sistemas Basados en Microproces
 - `docs/` - Fuentes en reStructuredText (Sphinx) de la documentación de ayuda publicada en GitHub Pages.
 - `vc-install/` - Scripts de instalación/desinstalación de Visual Studio Code y del soporte CMSIS para Windows y Linux.
 
+## Máquina Virtual con Ubuntu 24.04, Visual Code y CMSIS Extension instalados
+
+En este enlace se puede descargar la [máquina virtual](https://upm365-my.sharepoint.com/:u:/g/personal/mariano_ruiz_upm_es/IQCnubkelH05QY98gCN30LEDAX24d1cmgmsMIaeRfQpLmm4?e=k6EpNH)
+usuario: sbm
+password: sbm.2026
+
+Una vez realizado el login, abra un terminal y ejecute los siguientes comandos:
+
+```console
+source /etc/profile.d/sbm-rtos.sh
+code
+```
+
 ## Instalación de las herramientas para Visual Code
 
-La carpeta `vc-install` contiene los scripts para instalar Visual Code en Windows y Linux y el soporte para usar CMSIS.
+La carpeta `vc-install` contiene los scripts para instalar Visual Code en Windows y Linux, así como el soporte para usar CMSIS.
 La asignatura continúa usando de manera oficial Keil µVision, pero debido a que ARM va a dejar de actualizar esas herramientas y migrar a VC, se proporciona la opción de comenzar a utilizarlo.
 
 - `vc-install/windows/installer2.ps1` y `vc-install/windows/uninstaller.ps1` - Instalación y desinstalación completas del entorno en Windows.
