@@ -4,7 +4,7 @@
 Recursos a utilizar
 ===================
 
-Para el desarrollo de las prácticas del curso, se debe utilizar el software Keil µVision (disponible únicamente en Windows). Adicionalmente, también se da la opción de poder utilizar Visual Code (disponible en Windows y en Linux), aunque el uso de esta opción todavía está en pruebas. Se recomienda instalar Visual Code con los instaladores incluidos en este repositorio. Están disponibles en la carpeta ``vc-install`` para Linux (Ubuntu 24.04) y Windows 11/10
+Para el desarrollo de las prácticas del curso, se debe utilizar el software Keil µVision (disponible únicamente en Windows). Adicionalmente, se ofrece la opción de utilizar Visual Code (disponible en Windows y Linux), aunque su uso aún está en pruebas. Se recomienda instalar Visual Studio Code con los instaladores incluidos en este repositorio. Están disponibles en la carpeta ``vc-install`` para Linux (Ubuntu 24.04) y Windows 11/10
 
 
 Keil µVision
@@ -88,11 +88,27 @@ Los instaladores proporcionados para Windows y Linux instalan las versiones indi
      - 5.9.1
      - Sistema operativo RTX5 para Cortex M
 
+Máquina Virtual con Ubuntu 24.04, Visual Code y CMSIS Extension instalados
+--------------------------------------------------------------------------
+
+En este enlace se puede descargar la `máquina virtual <https://upm365-my.sharepoint.com/:u:/g/personal/mariano_ruiz_upm_es/IQCnubkelH05QY98gCN30LEDAX24d1cmgmsMIaeRfQpLmm4?e=k6EpNH>` en la que debe usar las siguientes credenciales.
+usuario: sbm
+password: sbm.20
+
+Una vez realizado el login, abra un terminal y ejecute los siguientes comandos:
+
+.. code-block:: bash
+
+   $ source /etc/profile.d/sbm-rtos.sh
+   $ code
+
+
 Hardware necesario
 ==================
 
-* Ordenador con sistema operativo Windows 10/11 (64 bits) o Ubuntu 24.04. En Windows tambien se puede utilizar una máquina virtual con VMWare Player para ejecutur Ubuntu 24.04-
+* Ordenador con sistema operativo Windows 10/11 (64 bits) o Ubuntu 24.04. En Windows también se puede utilizar una máquina virtual con VMWare Player para ejecutar Ubuntu 24.04-
 * Placa STM32F429I-Discovery con cable USB para depuración en hardware real.
 * Driver de software para comunicarse con el ST-LINK V2/V3.
+
 
 
